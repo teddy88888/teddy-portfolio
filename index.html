@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
   <head>
@@ -11,3 +12,1281 @@
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Teddy Prasetyo Dewanto | Frontend Developer</title>
+
+  <meta
+    name="description"
+    content="Portfolio of Teddy Prasetyo Dewanto, Junior Frontend Developer specializing in responsive and modern web interfaces."
+  />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#292184",
+            secondary: "#244397",
+            accent: "#FFA500",
+            dark: "#111827",
+            cream: "#FFF9E8"
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .project-card:hover .project-image {
+      transform: scale(1.05);
+    }
+
+    .project-card:hover .project-overlay {
+      opacity: 1;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+  <!-- =====================================================
+       NAVBAR
+  ====================================================== -->
+
+  <header class="fixed top-0 left-0 right-0 z-50 bg-primary text-white shadow-md">
+
+    <nav class="max-w-7xl mx-auto px-6 lg:px-10">
+
+      <div class="h-20 flex items-center justify-between">
+
+        <!-- Logo -->
+        <a href="#home" class="flex items-center gap-4">
+
+          <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-white/30">
+            <img
+              src="assets/tedy.png"
+              alt="Teddy Prasetyo Dewanto"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <span class="text-xl font-bold">
+            Teddy
+          </span>
+
+        </a>
+
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center gap-10">
+
+          <a
+            href="#home"
+            class="font-semibold hover:text-accent transition"
+          >
+            Home
+          </a>
+
+          <a
+            href="#about"
+            class="font-semibold hover:text-accent transition"
+          >
+            About
+          </a>
+
+          <a
+            href="#skills"
+            class="font-semibold hover:text-accent transition"
+          >
+            Skill
+          </a>
+
+          <a
+            href="#projects"
+            class="font-semibold hover:text-accent transition"
+          >
+            Project
+          </a>
+
+          <a
+            href="#faq"
+            class="font-semibold hover:text-accent transition"
+          >
+            FAQ
+          </a>
+
+        </div>
+
+
+        <!-- Mobile button -->
+        <button
+          id="menuButton"
+          class="md:hidden text-3xl"
+          aria-label="Open menu"
+        >
+          ☰
+        </button>
+
+      </div>
+
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="hidden md:hidden pb-6"
+      >
+
+        <div class="flex flex-col gap-5">
+
+          <a href="#home" class="font-semibold">
+            Home
+          </a>
+
+          <a href="#about" class="font-semibold">
+            About
+          </a>
+
+          <a href="#skills" class="font-semibold">
+            Skill
+          </a>
+
+          <a href="#projects" class="font-semibold">
+            Project
+          </a>
+
+          <a href="#faq" class="font-semibold">
+            FAQ
+          </a>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+  <!-- =====================================================
+       HERO
+  ====================================================== -->
+
+  <section
+    id="home"
+    class="min-h-screen bg-secondary text-white pt-20"
+  >
+
+    <div
+      class="max-w-7xl mx-auto px-6 lg:px-10 min-h-[calc(100vh-80px)] flex items-center"
+    >
+
+      <div
+        class="w-full grid lg:grid-cols-2 gap-10 items-center"
+      >
+
+        <!-- Hero Text -->
+
+        <div class="py-16 lg:py-0">
+
+          <h1
+            class="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight"
+          >
+
+            <span
+              class="inline-block bg-accent text-black px-2 py-1"
+            >
+              Crafting
+            </span>
+
+            Interfaces,
+
+            <br />
+
+            One Line at a Time
+
+          </h1>
+
+
+          <p
+            class="mt-8 text-xl md:text-2xl text-white/80 leading-relaxed max-w-2xl"
+          >
+            Building fast, accessible, and responsive web
+            experiences that users love.
+          </p>
+
+
+          <div class="mt-10 flex flex-wrap gap-4">
+
+            <a
+              href="#contact"
+              class="bg-cream text-black px-8 py-4 rounded-full font-bold hover:bg-accent transition"
+            >
+              Say Hello
+            </a>
+
+            <a
+              href="#projects"
+              class="border-2 border-white px-8 py-4 rounded-full font-bold hover:bg-white hover:text-secondary transition"
+            >
+              View Projects
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- Hero Image -->
+
+        <div
+          class="relative h-[500px] lg:h-[650px] flex items-end justify-center"
+        >
+
+          <img
+            src="assets/developer2.png"
+            alt="Teddy - Frontend Developer"
+            class="max-h-full max-w-full object-contain"
+          />
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       ABOUT
+  ====================================================== -->
+
+  <section
+    id="about"
+    class="py-24 bg-white"
+  >
+
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+
+        <span
+          class="inline-block border-2 border-black rounded-full px-6 py-2 font-bold"
+        >
+          About Me
+        </span>
+
+        <h2
+          class="mt-6 text-4xl md:text-5xl font-bold text-gray-900"
+        >
+          Junior Frontend Developer
+        </h2>
+
+      </div>
+
+
+      <div
+        class="grid md:grid-cols-2 gap-12 items-center"
+      >
+
+        <div>
+
+          <h3 class="text-3xl font-bold mb-6">
+            Hello, I'm Teddy 👋
+          </h3>
+
+          <p class="text-lg text-gray-600 leading-relaxed mb-6">
+            Hi, I'm Teddy
+Junior Frontend Developer
+I build responsive, accessible, and user-friendly websites using modern web technologies.
+          </p>
+
+          <p class="text-lg text-gray-600 leading-relaxed">
+            I'm a Junior Frontend Developer currently developing my skills through a Web Programming Bootcamp. I enjoy turning designs into responsive and interactive web experiences.
+          </p>
+
+        </div>
+
+
+        <div
+          class="bg-gray-100 rounded-3xl p-8"
+        >
+
+          <div class="grid grid-cols-2 gap-6">
+
+            <div>
+              <p class="text-gray-500">
+                Education
+              </p>
+
+              <p class="font-bold mt-2">
+                Teknik Elektro
+              </p>
+
+              <p class="text-sm text-gray-500">
+                Universitas Negeri Jakarta
+              </p>
+            </div>
+
+
+            <div>
+              <p class="text-gray-500">
+                Location
+              </p>
+
+              <p class="font-bold mt-2">
+                Bekasi
+              </p>
+
+              <p class="text-sm text-gray-500">
+                Indonesia
+              </p>
+            </div>
+
+
+            <div>
+              <p class="text-gray-500">
+                Focus
+              </p>
+
+              <p class="font-bold mt-2">
+                Frontend
+              </p>
+
+              <p class="text-sm text-gray-500">
+                Web Development
+              </p>
+            </div>
+
+
+            <div>
+              <p class="text-gray-500">
+                Status
+              </p>
+
+              <p class="font-bold mt-2 text-green-600">
+                Available
+              </p>
+
+              <p class="text-sm text-gray-500">
+                Freelance
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       SKILLS
+  ====================================================== -->
+
+  <section
+    id="skills"
+    class="py-24 bg-gray-50"
+  >
+
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+
+        <span
+          class="inline-block border-2 border-black rounded-full px-6 py-2 font-bold"
+        >
+          Skills
+        </span>
+
+        <h2
+          class="mt-6 text-4xl md:text-5xl font-bold"
+        >
+          Technologies I Use
+        </h2>
+
+      </div>
+
+
+      <div
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+      >
+
+        <!-- HTML -->
+
+        <div
+          class="skill-card bg-white rounded-2xl p-6 text-center shadow-sm transition duration-300"
+        >
+
+          <div class="text-4xl mb-4">
+            <img src='/assets/html.png' alt='HTML' class='mx-auto w-12 h-12' />
+          </div>
+
+          <h3 class="font-bold text-lg">
+            HTML
+          </h3>
+
+          <p class="text-gray-500 text-sm mt-2">
+            Semantic Structure
+          </p>
+
+        </div>
+
+
+        <!-- CSS -->
+
+        <div
+          class="skill-card bg-white rounded-2xl p-6 text-center shadow-sm transition duration-300"
+        >
+
+          <div class="text-4xl mb-4">
+            <img src="/assets/csslabel.png" alt="CSS" class="mx-auto w-12 h-12" />
+          </div>
+
+          <h3 class="font-bold text-lg">
+            CSS
+          </h3>
+
+          <p class="text-gray-500 text-sm mt-2">
+            Responsive Design
+          </p>
+
+        </div>
+
+
+        <!-- Tailwind -->
+
+        <div
+          class="skill-card bg-white rounded-2xl p-6 text-center shadow-sm transition duration-300"
+        >
+
+          <div class="text-4xl mb-4">
+            <img src="/assets/tailwind.png" alt="Tailwind CSS" class="mx-auto w-12 h-12" />
+          </div>
+
+          <h3 class="font-bold text-lg">
+            Tailwind CSS
+          </h3>
+
+          <p class="text-gray-500 text-sm mt-2">
+            Utility First CSS
+          </p>
+
+        </div>
+
+
+        <!-- JavaScript -->
+
+        <div
+          class="skill-card bg-white rounded-2xl p-6 text-center shadow-sm transition duration-300"
+        >
+
+          <div class="text-4xl mb-4">
+            <img src="/assets/js.png" alt="javascript" class="mx-auto w-12 h-12" />
+          </div>
+
+          <h3 class="font-bold text-lg">
+            JavaScript
+          </h3>
+
+          <p class="text-gray-500 text-sm mt-2">
+            Interactive Web
+          </p>
+
+        </div>
+
+
+        <!-- React -->
+
+        <div
+          class="skill-card bg-white rounded-2xl p-6 text-center shadow-sm transition duration-300"
+        >
+
+          <div class="text-4xl mb-4">
+            <img src="/assets/reactlabel.png" alt="React" class="mx-auto w-12 h-12" />
+          </div>
+
+          <h3 class="font-bold text-lg">
+            React
+          </h3>
+
+          <p class="text-gray-500 text-sm mt-2">
+            Component Based UI
+          </p>
+
+        </div>
+
+
+        <!-- TypeScript -->
+
+        <div
+          class="skill-card bg-white rounded-2xl p-6 text-center shadow-sm transition duration-300"
+        >
+
+          <div class="text-4xl mb-4">
+            <img src="/assets/ts.png" alt="TypeScript" class="mx-auto w-12 h-12" />
+          </div>
+
+          <h3 class="font-bold text-lg">
+            TypeScript
+          </h3>
+
+          <p class="text-gray-500 text-sm mt-2">
+            Typed JavaScript
+          </p>
+
+        </div>
+
+
+        <!-- Git -->
+
+        <div
+          class="skill-card bg-white rounded-2xl p-6 text-center shadow-sm transition duration-300"
+        >
+
+          <div class="text-4xl mb-4">
+            <img src="/assets/git.png" alt="Git" class="mx-auto w-12 h-12" />
+          </div>
+
+          <h3 class="font-bold text-lg">
+            Git
+          </h3>
+
+          <p class="text-gray-500 text-sm mt-2">
+            Version Control
+          </p>
+
+        </div>
+
+
+        <!-- Figma -->
+
+        <div
+          class="skill-card bg-white rounded-2xl p-6 text-center shadow-sm transition duration-300"
+        >
+
+          <div class="text-4xl mb-4">
+            <img src="/assets/fiqma.png" alt="Figma" class="mx-auto w-12 h-12" />
+          </div>
+
+          <h3 class="font-bold text-lg">
+            Figma
+          </h3>
+
+          <p class="text-gray-500 text-sm mt-2">
+            UI Design
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       PROJECTS
+  ====================================================== -->
+
+  <section
+    id="projects"
+    class="py-24 bg-white"
+  >
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+
+        <span
+          class="inline-block border-2 border-black rounded-full px-6 py-2 font-bold"
+        >
+          Portfolio
+        </span>
+
+        <h2
+          class="mt-6 text-4xl md:text-5xl font-bold"
+        >
+          Built with Passion, Shipped with Precision
+        </h2>
+
+        <p
+          class="mt-5 text-gray-600 max-w-2xl mx-auto text-lg"
+        >
+          Some projects I created while learning and developing my frontend development skills.
+        </p>
+
+      </div>
+
+
+
+      <!-- PROJECT 1 -->
+
+      <div
+        class="project-card grid lg:grid-cols-2 gap-10 items-center mb-24"
+      >
+
+        <!-- Image -->
+
+        <div
+          class="relative overflow-hidden rounded-3xl bg-gray-100 shadow-xl"
+        >
+
+          <img
+            src="https://project-library-sandy.vercel.app/"
+            alt=""
+            class="hidden"
+          />
+
+          <div
+            class="h-[350px] bg-gradient-to-br from-blue-100 to-blue-300 flex items-center justify-center"
+          >
+
+            <div class="text-center">
+
+              <div class="text-7xl mb-0">
+                <img src="/assets/library.png" alt="Library" class="mx-auto w-67 h-64" />
+              </div>
+
+              <h3
+                class="text-2xl font-bold text-blue-900"
+              >
+                Booky Library
+              </h3>
+
+              <p class="text-blue-800 mt-0">
+                Library Management Web App
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Content -->
+
+        <div>
+
+          <span
+            class="text-sm font-bold text-secondary uppercase tracking-wider"
+          >
+            Project 01
+          </span>
+
+          <h3
+            class="text-4xl font-bold mt-3"
+          >
+            Booky Library
+          </h3>
+
+          <p
+            class="mt-5 text-gray-600 text-lg leading-relaxed"
+          >
+           A responsive library web application for browsing and discovering books.
+          </p>
+
+
+          <div class="flex flex-wrap gap-3 mt-6">
+
+            <span class="bg-gray-100 px-4 py-2 rounded-full text-sm font-semibold">
+              React
+            </span>
+
+            <span class="bg-gray-100 px-4 py-2 rounded-full text-sm font-semibold">
+              TypeScript
+            </span>
+
+            <span class="bg-gray-100 px-4 py-2 rounded-full text-sm font-semibold">
+              Tailwind CSS
+            </span>
+
+          </div>
+
+
+          <div class="mt-8 flex gap-4">
+
+            <a
+              href="https://project-library-sandy.vercel.app/"
+              target="_blank"
+              class="bg-secondary text-white px-6 py-3 rounded-full font-bold hover:bg-primary transition"
+            >
+              Live Demo ↗
+            </a>
+
+            <a
+              href="https://github.com/teddy88888/project-library"
+              target="_blank"
+              class="border-2 border-gray-900 px-6 py-3 rounded-full font-bold hover:bg-gray-900 hover:text-white transition"
+            >
+              GitHub ↗
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- PROJECT 2 -->
+
+      <div
+        class="project-card grid lg:grid-cols-2 gap-10 items-center mb-24"
+        >
+
+        <!-- Content -->
+
+        <div class="lg:order-1">
+
+          <span
+            class="text-sm font-bold text-secondary uppercase tracking-wider"
+          >
+            Project 02
+          </span>
+
+          <h3
+            class="text-4xl font-bold mt-3"
+          >
+            CMovie
+          </h3>
+
+          <p
+            class="mt-5 text-gray-600 text-lg leading-relaxed"
+          >
+            A movie search and information application that utilizes an API. This project is designed to display movie details, genres, cast members, synopses, and trailers within a modern dark-themed interface.
+          </p>
+
+
+          <div class="flex flex-wrap gap-3 mt-6">
+
+            <span class="bg-gray-100 px-4 py-2 rounded-full text-sm font-semibold">
+              React
+            </span>
+
+            <span class="bg-gray-100 px-4 py-2 rounded-full text-sm font-semibold">
+              TypeScript
+            </span>
+
+            <span class="bg-gray-100 px-4 py-2 rounded-full text-sm font-semibold">
+              API
+            </span>
+
+            <span class="bg-gray-100 px-4 py-2 rounded-full text-sm font-semibold">
+              Tailwind
+            </span>
+
+          </div>
+
+
+          <div class="mt-8 flex gap-4">
+
+            <a
+              href="https://challenge-8-new-teddy88888.vercel.app/"
+              target="_blank"
+              class="bg-secondary text-white px-6 py-3 rounded-full font-bold hover:bg-primary transition"
+            >
+              Live Demo ↗
+            </a>
+
+            <a
+              href="https://github.com/teddy88888"
+              target="_blank"
+              class="border-2 border-gray-900 px-6 py-3 rounded-full font-bold hover:bg-gray-900 hover:text-white transition"
+            >
+              GitHub ↗
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- Image -->
+
+        <div
+          class="lg:order-2 relative overflow-hidden rounded-3xl bg-gray-900 shadow-xl"
+        >
+
+          <div
+            class="h-[350px] flex items-center justify-center"
+          >
+
+            <div class="text-center text-white">
+
+              <div class="text-7xl mb-5">
+                <img src='/assets/movie2.png' alt='Movie' />
+              </div>
+
+              <h3 class="text-3xl font-bold">
+                CMOVIE
+              </h3>
+
+              <p class="text-gray-400 mt-0">
+                Movie Discovery Application
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- PROJECT 3 -->
+
+      <div
+        class="project-card grid lg:grid-cols-2 gap-10 items-center"
+      >
+
+        <!-- Image -->
+
+        <div
+          class="relative overflow-hidden rounded-3xl bg-purple-100 shadow-xl"
+        >
+
+          <div
+            class="h-[350px] flex items-center justify-center"
+          >
+
+            <div class="text-center">
+
+              <div class="text-7xl mb-5">
+                <img src='/assets/portfolio.png' alt='Portfolio'  />
+              </div>
+
+              <h3
+                class="text-4xl font-bold text-purple-900"
+              >
+                Personal Portfolio
+              </h3>
+
+              <p class="text-purple-700 mt-2">
+                Responsive Developer Portfolio
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Content -->
+
+        <div>
+
+          <span
+            class="text-sm font-bold text-secondary uppercase tracking-wider"
+          >
+            Project 03
+          </span>
+
+          <h3
+            class="text-4xl font-bold mt-3"
+          >
+            Personal Portfolio
+          </h3>
+
+          <p
+            class="mt-5 text-gray-600 text-lg leading-relaxed"
+          >
+            A personal portfolio website used to showcase myself, my skills, my learning experiences, and the projects I have worked on.
+          </p>
+
+
+          <div class="flex flex-wrap gap-3 mt-6">
+
+            <span class="bg-gray-100 px-4 py-2 rounded-full text-sm font-semibold">
+              HTML
+            </span>
+
+            <span class="bg-gray-100 px-4 py-2 rounded-full text-sm font-semibold">
+              Tailwind CSS
+            </span>
+
+            <span class="bg-gray-100 px-4 py-2 rounded-full text-sm font-semibold">
+              JavaScript
+            </span>
+
+          </div>
+
+
+          <div class="mt-8 flex gap-4">
+
+            <a
+              href="https://teddy-ecru.vercel.app/"
+              target="_blank"
+              class="bg-secondary text-white px-6 py-3 rounded-full font-bold hover:bg-primary transition"
+            >
+              Live Demo ↗
+            </a>
+
+            <a
+              href="https://github.com/teddy88888/portfolio"
+              target="_blank"
+              class="border-2 border-gray-900 px-6 py-3 rounded-full font-bold hover:bg-gray-900 hover:text-white transition"
+            >
+              GitHub ↗
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       WHY WORK WITH ME
+  ====================================================== -->
+
+  <section
+    class="py-24 bg-secondary text-white"
+  >
+
+    <div class="max-w-6xl mx-auto px-6 text-center">
+
+      <h2
+        class="text-4xl md:text-5xl font-bold"
+      >
+        Why Work With Me?
+      </h2>
+
+      <div
+        class="grid md:grid-cols-3 gap-8 mt-14"
+      >
+
+        <div
+          class="bg-white/10 rounded-2xl p-8"
+        >
+
+          <div class="text-4xl mb-5">
+            <img src="/assets/petir.png" alt="Fast Learner" class="mx-auto w-12 h-12" />
+          </div>
+
+          <h3 class="text-xl font-bold">
+            Fast Learner
+          </h3>
+
+          <p class="text-white/70 mt-4">
+            Always learning new technologies and striving to improve the quality of every project.
+          </p>
+
+        </div>
+
+
+        <div
+          class="bg-white/10 rounded-2xl p-8"
+        >
+
+          <div class="text-4xl mb-5">
+            <img src="/assets/responsif.png" alt="Responsive Design" class="mx-auto w-12 h-12" />
+          </div>
+
+          <h3 class="text-xl font-bold">
+            Responsive Design
+          </h3>
+
+          <p class="text-white/70 mt-4">
+           Focus on creating a website that is user-friendly on both desktop and mobile.
+          </p>
+
+        </div>
+
+
+        <div
+          class="bg-white/10 rounded-2xl p-8"
+        >
+
+          <div class="text-4xl mb-5">
+            <img src="/assets/shakehand.png" alt="Communication" class="mx-auto w-12 h-12" />
+          </div>
+
+          <h3 class="text-xl font-bold">
+            Communication
+          </h3>
+
+          <p class="text-white/70 mt-4">
+              Open to feedback and strive to understand the client's needs before starting a project.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       FAQ
+  ====================================================== -->
+
+  <section
+    id="faq"
+    class="py-24 bg-white"
+  >
+
+    <div class="max-w-4xl mx-auto px-6">
+
+      <div class="text-center mb-14">
+
+        <span
+          class="inline-block border-2 border-black rounded-full px-6 py-2 font-bold"
+        >
+          FAQ
+        </span>
+
+        <h2
+          class="mt-6 text-4xl font-bold"
+        >
+          Frequently Asked Questions
+        </h2>
+
+      </div>
+
+
+      <div class="space-y-5">
+
+        <details
+          class="border rounded-2xl p-6"
+        >
+
+          <summary
+            class="font-bold cursor-pointer text-lg"
+          >
+            What areas do I focus on?
+          </summary>
+
+          <p class="mt-4 text-gray-600">
+            I focus on frontend web development,
+            particularly responsive interfaces using
+            HTML, CSS, JavaScript, React, and Tailwind CSS.
+          </p>
+
+        </details>
+
+
+        <details
+          class="border rounded-2xl p-6"
+        >
+
+          <summary
+            class="font-bold cursor-pointer text-lg"
+          >
+            Do you accept freelance projects?
+          </summary>
+
+          <p class="mt-4 text-gray-600">
+            Yes. I am open to freelance projects, especially
+            landing pages, frontend websites, responsive UI,
+            and React-based websites.
+          </p>
+
+        </details>
+
+
+        <details
+          class="border rounded-2xl p-6"
+        >
+
+          <summary
+            class="font-bold cursor-pointer text-lg"
+          >
+            Can you work with Figma designs?
+          </summary>
+
+          <p class="mt-4 text-gray-600">
+            Yes. I can translate Figma designs into
+            responsive web interfaces using HTML,
+            Tailwind CSS dan React.
+          </p>
+
+        </details>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       CONTACT
+  ====================================================== -->
+
+  <section
+    id="contact"
+    class="py-24 bg-gray-50"
+  >
+
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+      <span
+        class="inline-block border-2 border-black rounded-full px-6 py-2 font-bold"
+      >
+        Contact
+      </span>
+
+      <h2
+        class="mt-6 text-4xl md:text-5xl font-bold"
+      >
+        Let's Work Together
+      </h2>
+
+      <p
+        class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto"
+      >
+        I am open to freelance opportunities,
+        frontend development, and other web projects.
+      </p>
+
+
+      <div
+        class="mt-10 flex flex-wrap justify-center gap-4"
+      >
+
+        <a
+          href="mailto:teddy12pd@gmail.com"
+          class="bg-secondary text-white px-8 py-4 rounded-full font-bold hover:bg-primary transition"
+        >
+          Email Me
+        </a>
+
+
+        <a
+          href="https://github.com/teddy88888"
+          target="_blank"
+          class="border-2 border-gray-900 px-8 py-4 rounded-full font-bold hover:bg-gray-900 hover:text-white transition"
+        >
+          GitHub
+        </a>
+
+
+        <a
+          href="https://www.linkedin.com/"
+          target="_blank"
+          class="border-2 border-gray-900 px-8 py-4 rounded-full font-bold hover:bg-gray-900 hover:text-white transition"
+        >
+          LinkedIn
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer
+    class="bg-primary text-white py-8"
+  >
+
+    <div
+      class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4"
+    >
+
+      <p>
+        © 2026 Teddy Prasetyo Dewanto
+      </p>
+
+      <p class="text-white/70">
+        Junior Frontend Developer
+      </p>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
+
+  <script>
+
+    const menuButton =
+      document.getElementById("menuButton");
+
+    const mobileMenu =
+      document.getElementById("mobileMenu");
+
+
+    menuButton.addEventListener("click", () => {
+
+      mobileMenu.classList.toggle("hidden");
+
+    });
+
+
+    // Close mobile menu after clicking navigation
+
+    const mobileLinks =
+      mobileMenu.querySelectorAll("a");
+
+
+    mobileLinks.forEach((link) => {
+
+      link.addEventListener("click", () => {
+
+        mobileMenu.classList.add("hidden");
+
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>
+>>>>>>> 3c6cbdf4f09132f98a25ff3b5951d0fe5c34fb5d
